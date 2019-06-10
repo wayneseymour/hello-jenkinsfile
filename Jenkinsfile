@@ -12,6 +12,7 @@ pipeline {
     stage('Test') {
       steps {
         echo '\n\t### Some Testing..'
+        sh './some-file.sh'
       }
     }
     stage('Deploy') {
